@@ -84,8 +84,8 @@ public class SomeMoreDetails implements ISomeMoreDetails, IBasicDetails
 	}
 	public Double calculateActualIncome() {
 		// TODO Auto-generated method stub
-		System.out.println("calculateActualIncome() method");
-		return null;
+//		System.out.println("calculateActualIncome() method");
+		return getIncome() - getLiability() + getAssets();
 	}
 	public String generateApplicationNumber() {
 		// TODO Auto-generated method stub

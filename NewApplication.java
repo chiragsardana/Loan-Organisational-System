@@ -7,14 +7,15 @@ public class NewApplication {
 	private ISomeMoreDetails someMoreDetails;
 	private DedupeChecker dedupeChecker;
 	private Scoring scoring;
-	
+	private Validation validation;
 	public NewApplication(IBasicDetails basicDetails, ISomeMoreDetails someMoreDetails, DedupeChecker dedupeChecker,
-			Scoring scoring) {
+			Scoring scoring, Validation validation) {
 		super();
 		this.basicDetails = basicDetails;
 		this.someMoreDetails = someMoreDetails;
 		this.dedupeChecker = dedupeChecker;
 		this.scoring = scoring;
+		this.validation = validation;
 	}
 	
 	
@@ -41,5 +42,15 @@ public class NewApplication {
 	}
 	public void setScoring(Scoring scoring) {
 		this.scoring = scoring;
+	}
+
+
+	public Validation getValidation() {
+		return validation;
+	}
+
+
+	public void setValidation(Validation validation) {
+		this.validation = validation;
 	}
 }

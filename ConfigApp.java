@@ -42,8 +42,12 @@ public class ConfigApp {
 		return new Scoring();
 	}
 	@Bean
+	public Validation validation() {
+		return new Validation();
+	}
+	@Bean
 	public NewApplication newApplication() {
-		return new NewApplication(basicDetails(), someMoreDetails(), dedupeChecker(), scoring());
+		return new NewApplication(basicDetails(), someMoreDetails(), dedupeChecker(), scoring(), validation());
 	}
 	@Bean 
 	public ExistingApplication existingApplication() {
